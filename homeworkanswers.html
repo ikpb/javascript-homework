@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+    <body></body>
+        
+        <script>
+        function  printShape(shape, height, character){
+switch(shape){
+    case "Square":
+        j="";
+        k="";
+        for(i=0;i<height;i++){
+            j=j+character;
+        }
+        for(i=0;i<height;i++){
+          k= k+j + "\n";
+        }
+        console.log(k);
+        break;
+    case "square":
+    j="";
+        k="";
+        for(i=0;i<height;i++){
+            j=j+character;
+        }
+        for(i=0;i<height;i++){
+          k= k+j + "\n";
+        }
+        console.log(k);
+        break;  
+    case "Triangle":
+        j=character;
+        for(i=0;i<height;i++){
+            console.log(j);
+            j=j+character;
+        }
+        break;
+    case "triangle":
+        j=character;
+        for(i=0;i<height;i++){
+            console.log(j);
+            j=j+character;
+        }
+        break; 
+    case "Diamond":
+        k=0;
+        space= "";
+        l="";
+        m="";
+        for(i=1;i<=height+height;i=i+2){
+            k=Math.abs((height-i)/2);
+            if(i<=height){
+              l=l+character;  
+            }else{
+                l=l.slice(0,(height*2)-i);
+            }
+            for(j=0;j<k;j++){
+                space= space+ " ";
+            }
+            console.log(space + l+m);
+            space = "";
+            if(i<height){
+               m=l;
+            }else{
+                m="";
+            }
+            // m.slice(1,Math.abs(i-l.length-height));
+        }
+        break; 
+    case "diamond":
+    k=0;
+        space= "";
+        l="";
+        m="";
+        for(i=1;i<=height+height;i=i+2){
+            k=Math.abs((height-i)/2);
+            if(i<=height){
+              l=l+character;  
+            }else{
+                l=l.slice(0,(height*2)-i);
+            }
+            for(j=0;j<k;j++){
+                space= space+ " ";
+            }
+            console.log(space + l+m);
+            space = "";
+            if(i<height){
+               m=l;
+            }else{
+                m="";
+            }
+            // m.slice(1,Math.abs(i-l.length-height));
+        }
+        break;   
+
+
+}
+}
+           
+        </script>
+    </body>
+</html>
