@@ -1,4 +1,4 @@
-
+//Calvin is the best
 /* 1. Fibonacci
 Define function: fib(n) 
 Return the nth number in the fibonacci sequence. */
@@ -275,4 +275,4 @@ The following line should set a Person object to the variable john:
         
             
         
-    }
+    
